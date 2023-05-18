@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    background: rgba(0, 8, 29,1);
+    color: #fff;
+    
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(103.24deg, rgba(0, 8, 29, 0.9) 23.83%, rgba(0, 8, 29, 0.3) 96.1%),url(/img/IN-en-20230508-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 10px 6%;
+    z-index: 1;
+ 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 180px;
+    /* padding-top: 15px;
+    padding-left: 30px; */
+    cursor: pointer;
+    z-index: 3;
+}
+
+.header .signin{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px;
+    width: 70px;
+    background: #f60612;
+    color: #fff;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+.header .signin:hover{
+    background: #dd0d18;
+}
+.header .lang{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 7px 10px;
+    background:rgba(0, 0, 0, 0.314);
+    color: #fff;
+    border: solid 1px #d6d6d6;
+    outline: 1px solid #d5d5d5;
+    border-radius: 4px;
+    line-height: 20px;
+
+}
+/* .header .lang img{
+    width: 9px;
+    margin-left: 8px;
+} */
+.header .lang .globe{
+    width: 19px;
+    margin-right: 8px;
+    /* align-items: center;
+    justify-content: center;
+    display: inline-flex; */
+}
+.header .language{
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
+.header-content{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-8%,-15%);
+    text-align: left;
+    margin-top: 30px;
+}
+.header-content h1{
+    font-size: 65px;
+    line-height: 70px;
+    font-weight: 800;
+    max-width: 800px;
+}
+.header-content h3{
+    font-size: 25px;
+   font-weight: 400;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.header-content p{
+    font-size: 25px;
+
+    font-weight: 400;
+}
+.email{
+    /* background: rgba(6, 6, 6, 0.568); */
+    /* border-radius: 4px; */
+    display: flex;
+    
+    align-items: center;
+    margin-top: 30px;
+    /* overflow: hidden; */
+}
+.email input{
+    background: rgba(6, 6, 6, 0.568);
+    flex: .5;
+    border: 0.5px solid #818181;
+    border-radius: 4px;
+    padding: 16px;
+    outline: 0;
+    /* margin-left: 20px; */
+}
+.email button{
+    background: #f60612;
+    width: auto;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    outline: 0;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+    /* line-height: 2.5px; */
+}
+.email button:hover{
+    background: #dd0d18;
+}
+
+/* new card section  */
+
+.features{
+    background: linear-gradient(333.08deg, #000235 29.2%, #010F42 71.93%, #E40913 111.25%);
+    font-size: 22px;
+    position: relative;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    z-index: 5;
+    margin-top: -7%;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* ye niche wala wrap hata sakta hu me */
+    flex-wrap: wrap; 
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.text-col{
+    /* padding-left: 8%; */
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.underline{
+    border-bottom: 8px solid rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin-left: 10%;   
+}
+.underline2{
+    border-bottom: 8px solid rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin-left: 10%;   
+}
+.underline3{
+    border-bottom: 8px solid rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin-left: 10%;   
+}
+
+
+.features h2{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* questions */
+
+.questions{
+    margin-top: 10%;
+    padding: 10px 12%;
+    
+    text-align: left;
+    font-size: 18px;
+}
+.questions h2{
+    font-size:40px ;
+    font-weight: 600;
+}
+.doubts{
+    margin-top: 20px ;
+    width: 100%;
+    max-width: 1150px;
+}
+.doubts li{
+    width: 100%;
+    padding: 5px;
+    list-style: none;
+
+}
+.doubts li label{
+    display: flex;
+    font-size: 26px;
+    font-weight: 500;   
+    align-items: left;
+    font-weight: 500;
+    background-color: rgba(19, 33, 68, 1);
+    margin-bottom: 2px;
+    padding: 25px;
+    cursor: pointer;
+    position: relative;
+}
+.doubts li label:hover{
+    background: rgb(24, 45, 97);
+}
+label::after {
+    content: '+' ;
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.doubts .solution{
+    background: rgba(19, 33, 68, 1);
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    transition:max-height 0.5s, padding 0.5s ;
+    overflow: hidden;
+}
+/* .doubts .solution:hover{
+    background: rgb(29, 50, 104);
+} */
+.doubts input[type="radio"]:checked + label + .solution{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.doubts input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.questions .joinnow p{
+    margin-top: 30px;
+}
+.questions .email{
+    max-width:800px ;
+    margin: 20px 0px;
+}
+
+.footer{
+    margin-top: 50px;
+    padding: 50px 12%;
+    color: #c7c7c7;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.footer .column{
+    margin-bottom: 20px;
+    flex-basis: 25%;
+    flex-grow: 1;
+}
+.footer .column a{
+    font-size: 14px;
+    color: #c7c7c7;
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    /* margin-left: -80px; */
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .lang{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 7px 10px;
+    background:rgba(8, 8, 8, 0.329);
+    border: solid 1px #d6d6d6;
+    color: #fff;
+    border-radius: 4px;
+
+    /* color: #fff;
+    background: rgba(0, 0, 0, 0.314);
+    border: 0.5px solid #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 5px 10px;
+    border-radius: 4px; */
+}
+.footer .lang img{
+    width: 9px;
+    margin-left: 8px;
+}
+.footer .lang .globe{
+    width: 19px;
+    margin-right: 8px;
+} 
+.legaltext{
+    font-size: 14px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+    .logo{
+        width: 90px;
+    }
+    .header .signin{
+        padding: 5px 10px;
+    }
+    .header .lang{
+        padding: 2px 6px;
+    }
+    .header-content{
+        position: unset;
+        transform: none;
+        /* justify-content: center; */
+        /* margin-top: 20%; */
+        
+    }
+    /* .features{
+        margin-top: -40%;
+    } */
+    .header-content h1{
+        font-size: 45px;
+    }
+    .header-content h3{
+        font-size: 22px;
+    }
+    .header-content p{
+        font-size: 22px;
+    }
+    /* .email {
+        font-size: 12px;
+        padding: 10px 15px;
+    } */
+    .email button{
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+    .text-col{
+        flex-basis: 100%;
+    }
+    .img-col{
+        flex-basis: 100%;
+    }
+    .features h2{
+        margin-top: 40px;
+        font-size: 31px;
+    }
+    .features p{
+        font-size: 20px;
+    }
+    .row:nth-child(3), .row:nth-child(7){
+        flex-direction: column-reverse;
+    }
+    .questions h2{
+        font-size: 31px;
+    }
+    .doubts li label{
+        font-size: 18px;
+
+    }
+    .doubts .solution{
+        font-size: 16px;
+
+    }
+    .questions button{
+        width: auto;
+        font-size: 10px;
+        padding: 8px 16px;
+    }
+    .footer .row{
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .logo{
+        width: 100px;
+    }
+    .nav .signin{
+        padding: 5px 10px;
+    }
+    .nav .lang{
+        padding: 4px 8px;
+    }
+    .header-content{
+        padding-top: 50px;
+        
+        width: fit-content;
+        
+        position: unset;
+        padding-top: 150px;
+        transform: none;
+    }
+    .header-content h1{
+        font-size: 30px;
+    }
+    .features{
+        width: auto;
+    }
+    .features .row{
+        justify-self: center;
+        align-self: center;
+        flex-direction: column;
+    }
+    .features .row .img-col{
+        padding: 10%;
+    }
+    
+    .questions{
+        justify-content: center;
+    } */
+    
+}
